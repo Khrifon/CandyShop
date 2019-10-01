@@ -42,15 +42,15 @@
 #### 2.2. Интерфейс пользователя <a name="2.2"></a>
 
 - Главная страница<br> 
-![Home page](./mockups/home.png) 
+![Home page](https://raw.githubusercontent.com/RSlabodchikov/CandyShop/master/documents/mockups/Home.png) 
 - Страница товара<br> 
-![Product page](./mockups/product.png)
+![Product page](https://raw.githubusercontent.com/RSlabodchikov/CandyShop/master/documents/mockups/Product.png)
 - Аккаунт пользователя<br> 
-![User account](./mockups/account.png)
+![User account](https://raw.githubusercontent.com/RSlabodchikov/CandyShop/master/documents/mockups/Account.png)
 - Каталог продуктов<br> 
-![Shop](./mockups/shop.png)
+![Shop](https://raw.githubusercontent.com/RSlabodchikov/CandyShop/master/documents/mockups/Shop.png)
 - Карзина<br> 
-![Cart](./mockups/cart.png)
+![Cart](https://raw.githubusercontent.com/RSlabodchikov/CandyShop/master/documents/mockups/Cart.png)
 
 ### 2.3. Характеристики пользователя <a name="2.3"></a>
 
