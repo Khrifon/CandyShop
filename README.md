@@ -10,5 +10,5 @@ For building and running the application you need:
 - [Maven 3](https://maven.apache.org)
 
 # Contents
-1. [Documentation](https://github.com/RSlabodchikov/CandyShop/tree/master/documents) <br>
-2. [Reqirements](https://github.com/RSlabodchikov/CandyShop/blob/master/documents/SRS.md) <br>
+1. [Documentation](https://github.com/RSlabodchikov/CandyShop/tree/master/Documents) <br>
+2. [Reqirements](https://github.com/RSlabodchikov/CandyShop/blob/master/Documents/SRS.md) <br>
