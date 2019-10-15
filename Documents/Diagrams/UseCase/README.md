@@ -1,6 +1,6 @@
 # Диаграмма вариантов использования
 
-![Диаграмма вариантов использования](../../../Images/UseCase/usecase.png)
+![Диаграмма вариантов использования](https://raw.githubusercontent.com/RSlabodchikov/CandyShop/master/Images/UseCase/useCase.PNG)
 
 Сценарии для каждого варианта использования описаны в [потоке событий](../UseCase/FlowOfEvents.md).
 
