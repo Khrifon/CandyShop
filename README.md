@@ -12,3 +12,4 @@ For building and running the application you need:
 # Contents
 1. [Documentation](https://github.com/RSlabodchikov/CandyShop/tree/master/Documents) <br>
 2. [Reqirements](https://github.com/RSlabodchikov/CandyShop/blob/master/Documents/SRS.md) <br>
+3. [Diagrams](https://github.com/RSlabodchikov/CandyShop/blob/master/Documents/Diagrams/README.md) <br>
