@@ -7,3 +7,4 @@
 3 [Диаграммы последовательностей](https://github.com/RSlabodchikov/CandyShop/blob/master/Documents/Diagrams/Sequence/README.md)  
 4 [Диаграммы состояний](https://github.com/RSlabodchikov/CandyShop/blob/master/Documents/Diagrams/State/README.md)  
 5 [Диаграмма классов](https://github.com/RSlabodchikov/CandyShop/blob/master/Documents/Diagrams/Class/README.md)  
+6 [Диаграмма компонентов](https://github.com/RSlabodchikov/CandyShop/blob/master/Documents/Diagrams/Component/README.md) 
