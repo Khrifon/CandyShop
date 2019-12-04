@@ -11,12 +11,12 @@ import slabodchikov.tritpo.candy_shop.backend.service.ProductService;
 
 @RestController
 @RequestMapping(value = "/api/products")
-public class ProductRepository {
+public class ProductController {
 
     private ProductService productService;
 
     @Autowired
-    public ProductRepository(ProductService productService) {
+    public ProductController(ProductService productService) {
         this.productService = productService;
     }
 

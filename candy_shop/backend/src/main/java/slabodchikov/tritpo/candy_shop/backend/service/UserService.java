@@ -6,6 +6,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import slabodchikov.tritpo.candy_shop.backend.entity.User;
 import slabodchikov.tritpo.candy_shop.backend.repository.UserRepository;
@@ -19,6 +20,9 @@ import java.util.Set;
 public class UserService implements UserDetailsService {
 
     private UserRepository userRepository;
+
+    @Autowired
+    private BCryptPasswordEncoder bcryptEncoder;
 
     @Autowired
     public UserService(UserRepository userRepository) {
@@ -38,6 +42,8 @@ public class UserService implements UserDetailsService {
     }
 
     public User save(User user) {
+        String encodedPassword = bcryptEncoder.encode(user.getPassword());
+        user.setPassword(encodedPassword);
         return userRepository.save(user);
     }
 

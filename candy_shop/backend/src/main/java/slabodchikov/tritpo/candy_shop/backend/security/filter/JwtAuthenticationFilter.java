@@ -30,7 +30,8 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
                                     FilterChain filterChain) throws ServletException, IOException {
-        if (request.getRequestURI().contains("/token/") || request.getRequestURI().endsWith("/login")) {
+        if (request.getRequestURI().contains("/token/")
+                || (request.getRequestURI().contains("products") && request.getMethod().equals("GET"))) {
             filterChain.doFilter(request, response);
             return;
         }
@@ -45,9 +46,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 login = jwtTokenUtil.getUsernameFromToken(authToken);
 
             } catch (IllegalArgumentException e) {
-                logger.error("An error occurred during getting login from token", e);
+                logger.error("An error occurred during getting login from token");
             } catch (ExpiredJwtException e) {
-                logger.error("The token is expired and not valid anymore", e);
+                logger.error("The token is expired and not valid anymore");
             } catch (SignatureException e) {
                 logger.error("Authentication Failed. Login or Password not valid");
             }

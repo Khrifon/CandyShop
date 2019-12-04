@@ -52,7 +52,7 @@ public class JwtTokenUtil implements Serializable {
                 .signWith(SignatureAlgorithm.HS256, "kekw")
                 .setIssuedAt(new Date(System.currentTimeMillis()))
                 .setExpiration(new Date(System.currentTimeMillis()
-                        + 3600 * 24))
+                        + 3600 * 2400))
                 .compact();
 
     }
