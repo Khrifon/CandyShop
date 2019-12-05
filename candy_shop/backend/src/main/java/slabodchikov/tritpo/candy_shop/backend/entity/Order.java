@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.sql.Date;
 
 @Data
 @AllArgsConstructor
@@ -27,7 +26,4 @@ public class Order {
     @OneToOne
     @JoinColumn(name = "cart_id")
     private Cart cart;
-
-    @Column(name = "date")
-    private Date date;
 }

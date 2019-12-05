@@ -17,6 +17,9 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long Id;
 
+    @Column(name = "name")
+    private String name;
+
     @Column(name = "weight")
     private double weight;
 
@@ -28,4 +31,7 @@ public class Product {
 
     @Column(name = "description")
     private String description;
+
+    @Column(name = "image")
+    private String image;
 }

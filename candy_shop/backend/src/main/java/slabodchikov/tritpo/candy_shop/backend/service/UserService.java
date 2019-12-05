@@ -29,6 +29,10 @@ public class UserService implements UserDetailsService {
         this.userRepository = userRepository;
     }
 
+    public Optional<User> findByLogin(String login) {
+        return userRepository.findUserByLogin(login);
+    }
+
     public Optional<User> findById(long id) {
         return userRepository.findById(id);
     }
@@ -50,7 +54,7 @@ public class UserService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = userRepository.findUserByLogin(username);
+        User user = userRepository.findUserByLogin(username).orElse(null);
         if (user != null) {
             return new org.springframework.security.core.userdetails.User(
                     user.getLogin(), user.getPassword(), getAuthority());
