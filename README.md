@@ -13,3 +13,5 @@ For building and running the application you need:
 1. [Documentation](https://github.com/RSlabodchikov/CandyShop/tree/master/Documents) <br>
 2. [Reqirements](https://github.com/RSlabodchikov/CandyShop/blob/master/Documents/SRS.md) <br>
 3. [Diagrams](https://github.com/RSlabodchikov/CandyShop/blob/master/Documents/Diagrams/README.md) <br>
+4. [Test plan](https://github.com/RSlabodchikov/CandyShop/blob/master/TESTING/TestPlan.md) <br>
+5. [Test results](https://github.com/RSlabodchikov/CandyShop/blob/master/TESTING/TestResults.md) <br>
