@@ -18,13 +18,13 @@ public class Cart {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long Id;
 
-    @OneToMany
-    @JoinColumn(name="cart_id")
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "cart_id")
     private List<Shipment> shipments;
 
-    @Column(name="current_price")
+    @Column(name = "current_price")
     private double currentPrice;
 
-    @Column(name="user_id")
+    @Column(name = "user_id")
     private long userId;
 }

@@ -8,9 +8,11 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import slabodchikov.tritpo.candy_shop.backend.entity.Cart;
 import slabodchikov.tritpo.candy_shop.backend.entity.User;
 import slabodchikov.tritpo.candy_shop.backend.repository.UserRepository;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
@@ -20,6 +22,9 @@ import java.util.Set;
 public class UserService implements UserDetailsService {
 
     private UserRepository userRepository;
+
+    @Autowired
+    private CartService cartService;
 
     @Autowired
     private BCryptPasswordEncoder bcryptEncoder;
@@ -48,7 +53,13 @@ public class UserService implements UserDetailsService {
     public User save(User user) {
         String encodedPassword = bcryptEncoder.encode(user.getPassword());
         user.setPassword(encodedPassword);
-        return userRepository.save(user);
+        user = userRepository.save(user);
+        Cart cart = new Cart();
+        cart.setCurrentPrice(0);
+        cart.setUserId(user.getId());
+        cart.setShipments(Collections.emptyList());
+        cartService.save(cart);
+        return user;
     }
 
 

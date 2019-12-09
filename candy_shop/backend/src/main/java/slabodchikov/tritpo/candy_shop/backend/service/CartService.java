@@ -33,4 +33,8 @@ public class CartService {
     public Cart save(Cart cart) {
         return cartRepository.save(cart);
     }
+
+    public Cart findByUserId(long userId) {
+        return cartRepository.findByUserId(userId);
+    }
 }

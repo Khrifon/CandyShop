@@ -6,4 +6,5 @@ import slabodchikov.tritpo.candy_shop.backend.entity.Cart;
 
 @Repository
 public interface CartRepository extends CrudRepository<Cart, Long> {
+    Cart findByUserId(Long userId);
 }

@@ -36,4 +36,9 @@ public class CartController {
     public Cart save(@RequestBody Cart cart) {
         return cartService.save(cart);
     }
+
+    @GetMapping(value = "/user/{userId}")
+    public Cart findByUserId(@PathVariable(name = "userId") Long id) {
+        return cartService.findByUserId(id);
+    }
 }

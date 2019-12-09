@@ -26,9 +26,6 @@ public class Product {
     @Column(name = "price")
     private double price;
 
-    @Column(name = "available_count")
-    private long availableCount;
-
     @Column(name = "description")
     private String description;
 
