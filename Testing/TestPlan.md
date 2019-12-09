@@ -125,7 +125,7 @@
 
 ## Представление результатов
 
-Результаты представлены  в документе ["Результаты тестирования"](https://github.com/RSlabodchikov/CandyShop/blob/master/TESTING/TestResults.md).
+Результаты представлены  в документе ["Результаты тестирования"](https://github.com/RSlabodchikov/CandyShop/blob/master/Testing/TestResults.md).
 
 <a name="conclusion"/>
 
